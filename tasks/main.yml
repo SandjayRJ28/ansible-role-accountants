@@ -1,0 +1,11 @@
+---
+- name: Include variables
+  include_vars: main.yml
+
+- name: Install GnuCash (Quickbooks alternative)
+  win_chocolatey:
+    name: gnucash
+    state: present
+    version: '3.10'
+    ignore_checksums: yes
+...
